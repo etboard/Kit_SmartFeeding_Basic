@@ -1,6 +1,6 @@
 # 이티보드 스마트모이공급 코딩 키트 (기본)
 
-* ETBoard Smart Feeding Coding Kit (Basic)
+* ET-Board Smart Feeding Coding Kit (Basic)
 * 동물이 터치센서를 접촉하면 모이가 자동으로 공급된다.
 * 터치센서, 서보모터
 </br></br>
@@ -15,7 +15,7 @@
 
 ### 지원 보드
 
-* 이티보드(ETBoard)
+* 이티보드(ET-Board)
 * ESP32-DevKit
 * NodeMCU-32S
 </br></br>
@@ -23,11 +23,11 @@
   
 ### 문서 및 자료(Documentation & File)
 
-아래 자료는 [이티보드(ETBoard) 자료실](http://et.ketri.re.kr/board/)에서도 얻을 수 있습니다.
+아래 자료는 [이티보드(ET-Board) 자료실](http://et.ketri.re.kr/board/)에서도 얻을 수 있습니다.
 </br></br>
 
 
-### 이티보드(ETBoard) 채널 안내
+### 이티보드(ET-Board) 채널 안내
 
 * [이티보드 스토어팜 (https://smartstore.naver.com/ketri)](https://smartstore.naver.com/ketri)
 * [이티보드 홈페이지 (http://et.ketri.re.kr)](http://et.ketri.re.kr)
