@@ -6,14 +6,15 @@
  * Warning      : Arduino IDE에서 ESP32Servo 라이브러리를 추가해서 컴파일 해야힘
  * Created Date : 2022.01.04 : LSC : 최초 작성
  * Modified     : 2022.01.12 : SCS : 소스 크린징
+ * Modified     : 2022.02.10 : SCS : 소스 크린징
 ******************************************************************************************/
 
 // 서보모터 제어를 위한 라이브러리 불러오기
 #include <ESP32Servo.h>
 Servo servo;
 
-int touch_sensor          = D2;         // 터치센서 핀
-static const int servoPin = D5;         // 서보모터 핀
+const int touch_sensor     = D2;        // 터치센서 핀
+const int servo_motor      = D5;        // 서보모터 핀
 
 //==========================================================================================
 void setup()
@@ -21,7 +22,7 @@ void setup()
 {
   Serial.begin(115200);                 // 시리얼 통신 준비
 
-  servo.attach(servoPin);               // 서보모터 제어 시작
+  servo.attach(servo_motor);            // 서보모터 제어 시작
   servo.write(50);                      // 서보모터를 기본(닫힘) 상태로 초기화
 
   pinMode(touch_sensor, INPUT);
