@@ -7,10 +7,18 @@
  * Created Date : 2022.01.04 : LSC : 최초 작성
  * Modified     : 2022.01.12 : SCS : 소스 크린징
  * Modified     : 2022.02.10 : SCS : 소스 크린징
+ * Modified     : 2022.10.03 : SCS : support arduino uno with ET-Upboard
 ******************************************************************************************/
 
+#include "pins_arduino.h"           // support arduino uno with ET-Upboard
+
 // 서보모터 제어를 위한 라이브러리 불러오기
-#include <ESP32Servo.h>
+#if defined(ARDUINO_AVR_UNO)   
+  #include <Servo.h>
+#else 
+  #include <ESP32Servo.h>
+#endif
+  
 Servo servo;
 
 const int touch_sensor     = D2;        // 터치센서 핀
